@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/results_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="username"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvRealName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/register_edit_text"
+        android:gravity="center"
+        android:text="Name Surname"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shadow"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvProfileGmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_edit_text"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:maxWidth="250dp"
+        android:text="Gmail"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRealName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvProfileScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_edit_text"
+        android:gravity="center"
+        android:text="En Yüksek Skorunuz : 0"
+        android:textColor="@color/darkblue"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileGmail"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btnCikisYap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Çıkış Yap"
+        android:textColor="@color/darkblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileScore"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
